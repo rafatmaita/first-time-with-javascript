@@ -97,5 +97,134 @@ switch (num) {
 
 
 
+for (let i = 0; i <= 5; i++) {//Q7
+  alert(i);
+}
+
+
+let resul = "";//Q8
+
+for (let i = 0; i <= 5; i++) {
+  resul += i + " ";
+}
+
+alert(resul);
+
+
+for (let i = 0; i <= 20; i++) {//Q9
+  if (i % 3 === 0) {
+    console.log(i);
+  }
+}
+
+
+let userInpu;//Q10
+while (true) {
+  userInput = prompt("Please enter a number between 0 and 100:");
+
+  if (userInpu === null || userInpu === "") {
+    alert("You canceled or entered an empty value. Please enter a valid number.");
+    continue; 
+  }
+
+  const number = parseFloat(userInpu);
+
+  if (!isNaN(number) && number >= 0 && number <= 100) {
+    alert("You entered a valid number: " + number);
+    break; 
+  } else {
+    alert("Invalid input. Please enter a number between 0 and 100.");
+  }
+}
+
+let usernput;
+while (true) {//Q11
+  userInput = prompt("Please enter a number between 0 and 100:");
+
+  if (usernput === null || usernput === "") {
+    alert("You canceled or entered an empty value. Please enter a valid number.");
+    continue; 
+  }
+
+  const number = parseFloat(usernput);
+
+  if (isNaN(number)) {
+    alert("Invalid input. Please enter a valid number.");
+  } else if (number >= 0 && number <= 100) {
+    alert("You entered a valid number: " + number);
+    break;
+  } else {
+    alert("Number out of range. Please enter a number between 0 and 100.");
+  }
+}
+
+let userIput;
+let sum = 0;
+
+while (true) {//Q12
+  userIput = prompt("Please enter an integer:");
+
+  if (userIput === null || userIput === "") {
+    alert("You canceled or entered an empty value. Please enter a valid integer.");
+    continue; 
+  }
+
+  const number = parseInt(userIput);
+
+  if (isNaN(number) || !Number.isInteger(number)) {
+    alert("Invalid input. Please enter a valid integer.");
+  } else {
+    for (let i = 0; i <= number; i++) {
+      sum += i;
+    }
+    alert(`The sum of integers from 0 to ${number} is ${sum}`);
+    break; 
+  }
+}
+
+
+let useInput;//Q13
+let snm = 0;
+let count = 0;
+
+while (true) {
+  useInput = prompt("Please enter an integer:");
+
+  if (useInput === null || useInput === "") {
+    alert("You canceled or entered an empty value. Please enter a valid integer.");
+    continue; 
+  }
+
+  const number = parseInt(useInput);
+
+  if (isNaN(number) || !Number.isInteger(number)) {
+    alert("Invalid input. Please enter a valid integer.");
+  } else {
+    for (let i = 0; i <= number; i++) {
+      snm += i;
+      count++;
+    }
+
+    const average = snm / count;
+
+    alert(`The average of integers from 0 to ${number} is ${average}`);
+    break;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 

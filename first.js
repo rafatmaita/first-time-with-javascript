@@ -1,5 +1,5 @@
 const one =-9*3; //-27 
-
+// this is an update ------------------------------------------------------------>
 var tow = "value is" + 50;// value is 50
 var therd = 17 % 5;//2
 var forr = 5 % 17;//5
